@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     fetchEvents()
 
-})
 
+})
 
 
 function displayEvents(events){
@@ -36,6 +36,16 @@ function fetchEvents(){
     fetch('http://localhost:3000/events')
 
     .then(res => res.json())
+    // .then(eventData =>console.log(eventData))
 
     .then(eventData =>eventData.forEach(evnt => displayEvents(evnt)))
 }
+ const form=document.querySelector('form')
+ form.addEventListener('submit', (e)=>{
+     e.preventDefault()
+     const titleEl=document.getElementById('title').value
+     const venueEl=document.getElementById('venue').value
+     const timeEl=document.getElementById('time').value
+     const descriptionEl=document.getElementById('description').value
+     console.log(e.target)
+ })
