@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cyan;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.heading h1{
+    margin-bottom: 20px;
+}
+form{
+    width: 40%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.open-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto; 
+}
+form input{
+    width: 80%;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+form textarea{
+    width: 80%;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+form button{
+    margin: 7px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.eventListing{
+    
+    margin-left: 150px;
+
+}
+.container {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52
+  }
