@@ -16,6 +16,21 @@ body{
 .heading h1{
     margin-bottom: 20px;
 }
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: red;
+}
+.btn button:hover{
+background-color: white;
+}
 form{
     width: 40%;
     display: flex;
@@ -23,6 +38,7 @@ form{
     align-items: center;
     flex-direction: column;
     margin: auto;
+    display: none;
 }
 .open-button{
     display: flex;
@@ -56,6 +72,7 @@ form button{
 
 }
 .container {
+    text-align: center;
     border: grey solid 1px;
     padding: 1rem;
     width: 15rem;

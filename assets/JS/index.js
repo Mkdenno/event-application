@@ -1,6 +1,7 @@
 const inputData={ }
 
 document.addEventListener('DOMContentLoaded', ()=>{
+    fetchEvents()
 
 })
 
@@ -29,13 +30,15 @@ function displayEvents(events){
 }
 
 
-
+ function fetchEvents(){
     fetch('http://localhost:3000/events')
 
     .then(res => res.json())
     // .then(eventData =>console.log(eventData))
 
     .then(eventData =>eventData.forEach(evnt => displayEvents(evnt)))
+ }
+
 
 const form=document.querySelector('.eventForm')
 form.addEventListener('submit', (e)=>{
@@ -47,8 +50,11 @@ const venueEl=document.querySelector('#venue').value
 const dateEl=document.querySelector('#date').value
 const timeEl=document.querySelector('#time').value
 const descriptionEl=document.querySelector('#description').value
-
-inputData.title=titleEl
+if(titleEl=="" && venueEl=="" && dateEl=="" && timeEl=="" && descriptionEl==""){
+    alert("All fields are required")
+}
+else{
+    inputData.title=titleEl
 inputData.venue=venueEl
 inputData.date=dateEl
 inputData.time=timeEl
@@ -64,5 +70,8 @@ inputData.description=descriptionEl
      })
      .then(res =>res.json())
      .then(dataEvnt =>console.log(dataEvnt))
+}
+
 
  })
+
