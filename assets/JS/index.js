@@ -75,3 +75,8 @@ inputData.description=descriptionEl
 
  })
 
+
+
+ const btnEl=document.querySelector('.btn').addEventListener('click', ()=>{
+     form.style.display="block"
+ })
