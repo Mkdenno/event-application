@@ -13,7 +13,20 @@ function displayEvents(events){
     // const eventDescription=document.getElementById('eventDescription')
     const container=document.createElement('div')
     container.className="container"
-
+    container.innerHTML=`
+    <img
+    id="img"
+    src="${events.image}"
+    alt="[eventImage]"
+  />
+  <h2 id="eventTitle">${events.title}</h2>
+  <p id="eventVenue">${events.venue}</p>
+  <p id="eventVenue">${events.date}</p>
+  <p id="eventTime">${events.time}</p>
+  <p id="eventDescription">${events.description}</p>
+  <button class="like-btn" id="">Like ❤️</button>
+  <button>Delete</button>
+    `
 }
 
 
