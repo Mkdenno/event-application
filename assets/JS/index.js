@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 function displayEvents(events){
+    const listing=document.getElementById('eventListing')
 
 }
 
