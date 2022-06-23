@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
     fetchEvents()
 
 })
+
+
+
+function displayEvents(events){
+
+}
+
+
 function fetchEvents(){
 
     fetch('http://localhost:3000/events')
