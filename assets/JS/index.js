@@ -1,9 +1,8 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-    fetchEvents()
+const inputData={ }
 
+document.addEventListener('DOMContentLoaded', ()=>{
 
 })
-
 
 function displayEvents(events){
     const listing=document.getElementById('eventListing')
@@ -14,16 +13,15 @@ function displayEvents(events){
     const container=document.createElement('div')
     container.className="container"
     container.innerHTML=`
-    <img
-    id="img"
-    src="${events.image}"
-    alt="[eventImage]"
-  />
   <h2 id="eventTitle">${events.title}</h2>
-  <p id="eventVenue">${events.venue}</p>
-  <p id="eventVenue">${events.date}</p>
-  <p id="eventTime">${events.time}</p>
-  <p id="eventDescription">${events.description}</p>
+  <p id="eventVenue"><span>Venue:</span>
+  ${events.venue}</p>
+  <p id="eventdate"> <span>Date:</span>
+  ${events.date}</p>
+  <p id="eventTime"> <span>Time:</span>
+  ${events.time}</p>
+  <p id="eventDescription"><span>Description:</span>
+  ${events.description}</p>
   <button class="like-btn" id="">Like ❤️</button>
   <button>Delete</button>
     `
@@ -31,7 +29,6 @@ function displayEvents(events){
 }
 
 
-function fetchEvents(){
 
     fetch('http://localhost:3000/events')
 
@@ -39,13 +36,33 @@ function fetchEvents(){
     // .then(eventData =>console.log(eventData))
 
     .then(eventData =>eventData.forEach(evnt => displayEvents(evnt)))
-}
- const form=document.querySelector('form')
- form.addEventListener('submit', (e)=>{
+
+const form=document.querySelector('.eventForm')
+form.addEventListener('submit', (e)=>{
      e.preventDefault()
-     const titleEl=document.getElementById('title').value
-     const venueEl=document.getElementById('venue').value
-     const timeEl=document.getElementById('time').value
-     const descriptionEl=document.getElementById('description').value
-     console.log(e.target)
+
+
+const titleEl=document.querySelector('#title').value
+const venueEl=document.querySelector('#venue').value
+const dateEl=document.querySelector('#date').value
+const timeEl=document.querySelector('#time').value
+const descriptionEl=document.querySelector('#description').value
+
+inputData.title=titleEl
+inputData.venue=venueEl
+inputData.date=dateEl
+inputData.time=timeEl
+inputData.description=descriptionEl
+
+     fetch('http://localhost:3000/events',{
+         method :"POST",
+         headers:{
+             "content-Type":"application/json",
+             accept:"application/json"
+         },
+         body:JSON.stringify(inputData)
+     })
+     .then(res =>res.json())
+     .then(dataEvnt =>console.log(dataEvnt))
+
  })
