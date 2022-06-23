@@ -27,6 +27,7 @@ function displayEvents(events){
   <button class="like-btn" id="">Like ❤️</button>
   <button>Delete</button>
     `
+    listing.appendChild(container)
 }
 
 
