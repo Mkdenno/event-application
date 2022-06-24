@@ -55,6 +55,7 @@ form.addEventListener('submit', (e)=>{
 
 
 const titleEl=document.querySelector('#title').value
+const imageEl=document.querySelector('#image').value
 const venueEl=document.querySelector('#venue').value
 const dateEl=document.querySelector('#date').value
 const timeEl=document.querySelector('#time').value
@@ -66,6 +67,7 @@ if(titleEl=="" && venueEl=="" && dateEl=="" && timeEl=="" && descriptionEl==""){
 }
 else{
 inputData.title=titleEl
+inputData.image=imageEl
 inputData.venue=venueEl
 inputData.date=dateEl
 inputData.time=timeEl
