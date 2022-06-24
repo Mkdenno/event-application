@@ -27,9 +27,13 @@ function displayEvents(events){
   <div id="btns">
   <button class="like-btn" id="">Like ❤️</button>
   <button id="deleteBtn">Delete</button>
- 
+  </div>
+  </div>
+  <div id="img">
+  <img src="${events.image}"/>
+  </div>
     `
-
+    
    container.querySelector('#deleteBtn').addEventListener('click', ()=>{
        
        container.remove()
