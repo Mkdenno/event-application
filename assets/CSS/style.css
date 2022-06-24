@@ -41,13 +41,6 @@ form{
     margin: auto;
     display: none;
 }
-/* .open-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto; 
-} */
 form input{
     width: 80%;
     margin: 7px;
@@ -87,6 +80,15 @@ form button{
       color: white;
       font-size: 25px;
   }
-  #img{
-
-  }
+#btns{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+#btns .likebtn, #deleteBtn{
+    margin: 0 4rem;
+}
+#btns #deleteBtn{
+    padding:5px 20px;
+}
