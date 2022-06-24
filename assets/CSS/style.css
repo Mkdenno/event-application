@@ -5,6 +5,7 @@
 }
 body{
     background-color:rgb(165, 165, 225);
+    overflow-x: hidden;
 }
 .heading{
     display: flex;
@@ -40,13 +41,13 @@ form{
     margin: auto;
     display: none;
 }
-.open-button{
+/* .open-button{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto; 
-}
+} */
 form input{
     width: 80%;
     margin: 7px;
@@ -68,20 +69,24 @@ form button{
 }
 .eventListing{
     
-    margin-left: 150px;
 
 }
 .container {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align:start;
     border: grey solid 1px;
     padding: 1rem;
-    width: 15rem;
+    width: auto;
     height: 25rem;
-    display: inline-grid;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     box-shadow: 3px 4px black;
   }
   .container span{
       color: white;
       font-size: 25px;
+  }
+  #img{
+
   }
