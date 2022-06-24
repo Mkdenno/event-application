@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     background-color:rgb(165, 165, 225);
-    overflow-x: hidden;
+    width: 100vw;
+
 }
 .heading{
     display: flex;
@@ -28,6 +30,7 @@ body{
     border-radius: 5px;
     background-color: black;
     color: red;
+    cursor: pointer;
 }
 .btn button:hover{
 background-color: white;
@@ -61,34 +64,37 @@ form button{
     border-radius: 5px;
 }
 .eventListing{
-    
+    flex-wrap: wrap;
 
 }
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align:start;
     border: grey solid 1px;
     padding: 1rem;
     width: auto;
-    height: 25rem;
     margin: 2rem 2rem;
     box-shadow: 3px 4px black;
+    flex-wrap: wrap;
+
   }
   .container span{
       color: white;
       font-size: 25px;
   }
-#btns{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
+ #details{
+     width: 30%;
+     word-wrap:break-word;
+ }
+.bt{
+    border-radius: 5px;
+    background-color: black;
+    color: red;
+    padding: 5px;
+    margin-left: 30px;
+    cursor: pointer;
 }
-#btns .likebtn, #deleteBtn{
-    margin: 0 4rem;
-}
-#btns #deleteBtn{
-    padding:5px 20px;
+.bt:hover{
+    background-color: white;
 }
