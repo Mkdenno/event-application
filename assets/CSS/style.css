@@ -19,6 +19,9 @@ body{
 .heading h1{
     margin-bottom: 20px;
 }
+#hd{
+    color: red;
+}
 .btn{
     display: flex;
     justify-content: center;
@@ -86,6 +89,9 @@ form button{
  #details{
      width: 30%;
      word-wrap:break-word;
+ }
+ #title{
+     color: red;
  }
 .bt{
     border-radius: 5px;

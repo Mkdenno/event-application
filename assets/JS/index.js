@@ -15,7 +15,7 @@ function displayEvents(events){
 
     container.innerHTML=`
     <div id="details">
-  <h2 id="eventTitle">${events.title}</h2>
+  <h2 id="eventTitle"><span id="title">${events.title}</span></h2>
   <p id="eventVenue"><span>Venue:</span>
   ${events.venue}</p>
   <p id="eventdate"> <span>Date:</span>
