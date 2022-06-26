@@ -13,7 +13,7 @@ This project is an Event Application.Where a user can view all the available eve
 -Unzip the downloaded files in a folder of choice.
 -Open the index file from the zipped file with any browser.
 ##Live Link
--[Click this link to view the live application]  ()
+-[Click this link to view the live application]  (https://mkdenno.github.io/event-application/)
 ## LICENSE
 MIT License
 Copyright (c) [2022] [DENNIS KIPROP]
