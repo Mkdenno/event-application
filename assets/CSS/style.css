@@ -9,34 +9,54 @@ body{
     width: 100vw;
 
 }
+.links ul{
+    display: flex;
+
+}
+.links ul li{
+    margin: 1rem;
+    padding: 3rem 0;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+
+}
+.links ul li a:hover{
+    background-color:rgb(165, 165, 225);
+
+}
 .heading{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    margin: 20px;
+    background-color:darkblue;
+    width: 100vw;
 }
 .heading h1{
     margin-bottom: 20px;
 }
 #hd{
-    color: red;
+    color: white;
 }
 .btn{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+
 
 }
 .btn button{
     padding: 15px 20px;
     border-radius: 5px;
-    background-color: black;
-    color: red;
+    background-color:darkblue;
     cursor: pointer;
+    color: white;
 }
 .btn button:hover{
-background-color: white;
+background-color: rgb(165, 165, 225);
 }
 form{
     width: 40%;
@@ -95,12 +115,63 @@ form button{
  }
 .bt{
     border-radius: 5px;
-    background-color: black;
-    color: red;
+    background-color: darkblue;
     padding: 5px;
+    color: white;
     margin-left: 30px;
     cursor: pointer;
 }
 .bt:hover{
-    background-color: white;
+    background-color: rgb(165, 165, 225);
 }
+.contact{
+    background-color: darkblue;
+}
+
+
+ .contact h1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 1rem;
+     font-size: 2rem;
+     color: white;
+     border-top: 1px solid white;
+
+ }
+ .title{
+    color:black;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.mynumber ul li {
+    list-style: none;
+    display: flex;
+    margin-bottom: 2rem;
+    color: white;
+
+
+}
+.mynumber ul li i{
+    margin-right: 1rem;
+    color: white;
+
+
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social-media i{
+    margin: 1.5rem;
+    color: white;
+}
+

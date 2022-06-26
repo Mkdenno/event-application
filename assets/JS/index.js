@@ -108,6 +108,7 @@ window.location.reload();
      .then(res => res.json())
      .then(event => console.log(event))
 
+
  }
 
 
