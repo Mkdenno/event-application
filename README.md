@@ -4,6 +4,7 @@ This project is an Event Application.Where a user can view all the available eve
 
 ## ScreenShot
 ![Screenshot from 2022-06-26 11-34-41](https://user-images.githubusercontent.com/104482846/175806371-6b95234b-3e10-44c9-8f09-a91b5c5c9e57.png)
+![Screenshot from 2022-06-26 11-43-55](https://user-images.githubusercontent.com/104482846/175806657-c85bcb57-13ae-476f-b479-3703d27a3494.png)
 
 ## Technologies Used
 
