@@ -3,7 +3,7 @@
 This project is an Event Application.Where a user can view all the available events which has the location,venue, time starting, time ending and a little description of the event.Also the user is able to post an event by filling the input fields and submitting which will be stored in db.json.User can also delete an event.
 
 ## ScreenShot
-![Screenshot from 2022-06-26 11-05-04](https://user-images.githubusercontent.com/104482846/175805535-71376310-e4a8-4f77-b73c-b6bd02f67bf4.png)
+![Screenshot from 2022-06-26 11-34-41](https://user-images.githubusercontent.com/104482846/175806371-6b95234b-3e10-44c9-8f09-a91b5c5c9e57.png)
 
 ## Technologies Used
 
