@@ -25,7 +25,6 @@ function displayEvents(events){
   <p id="eventDescription"><span>Description:</span>
   ${events.description}</p>
   <div id="btns">
-  <button id="likebtn" id="likebtn">❤️</button>
   <button id="deleteBtn" class="bt">Delete</button>
   </div>
   </div>
@@ -38,15 +37,9 @@ function displayEvents(events){
        container.remove()
        deleteEvents(events.id)
    })
+
     
-//   const like=document.querySelector('#likebtn')
-//   like.addEventListener('click', ()=>{
-//        let clicks=like
-//        for(let i=0; i<clicks.length; i++){
-//            clicks +=1
-//            console.log(clicks)
-//        }   
-// })
+
 
     listing.appendChild(container)
 }
