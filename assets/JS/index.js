@@ -1,3 +1,4 @@
+const url="https://boiling-wildwood-30894.herokuapp.com/events"
 const inputData={ }
 
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -46,7 +47,7 @@ function displayEvents(events){
 
 
  function fetchEvents(){
-    fetch('http://localhost:3000/events')
+    fetch(url)
 
     .then(res => res.json())
 
@@ -78,7 +79,7 @@ inputData.date=dateEl
 inputData.time=timeEl
 inputData.description=descriptionEl
 
-     fetch('http://localhost:3000/events',{
+     fetch(url,{
          method :"POST",
          headers:{
              "content-Type":"application/json",
@@ -99,7 +100,7 @@ window.location.reload();
 
 
  function deleteEvents(id){
-     fetch(`http://localhost:3000/events/${id}`,{
+     fetch(`${url}/${id}`,{
          method: "DELETE",
          headers: {
              "Content-Type":"application/json"
