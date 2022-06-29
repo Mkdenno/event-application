@@ -6,7 +6,7 @@ This project is an Event Application.Where a user can view all the available eve
 ![Screenshot from 2022-06-26 15-55-19](https://user-images.githubusercontent.com/104482846/175815206-c023dcd5-a7ff-4597-9d94-022407b87b4b.png)
 ## Technologies Used
 
--HTML - which was used to develope the structure off the pages.
+-HTML - which was used to develop the structure off the pages.
 
 -CSS - which was used to style the User Interface.
 
