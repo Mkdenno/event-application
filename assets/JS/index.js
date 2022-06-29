@@ -1,4 +1,3 @@
-const url="https://boiling-wildwood-30894.herokuapp.com/events"
 const inputData={ }
 
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -47,7 +46,7 @@ function displayEvents(events){
 
 
  function fetchEvents(){
-    fetch(url)
+    fetch('https://boiling-wildwood-30894.herokuapp.com/events')
 
     .then(res => res.json())
 
@@ -79,7 +78,7 @@ inputData.date=dateEl
 inputData.time=timeEl
 inputData.description=descriptionEl
 
-     fetch(url,{
+     fetch('https://boiling-wildwood-30894.herokuapp.com/events',{
          method :"POST",
          headers:{
              "content-Type":"application/json",
@@ -100,7 +99,7 @@ window.location.reload();
 
 
  function deleteEvents(id){
-     fetch(`${url}/${id}`,{
+     fetch(`https://boiling-wildwood-30894.herokuapp.com/events/${id}`,{
          method: "DELETE",
          headers: {
              "Content-Type":"application/json"
